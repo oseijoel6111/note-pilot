@@ -1,7 +1,8 @@
 
 
 export const signup = (req, res)=>{
-     res.send('User signup successfully')
+
+     res.send(req.body)
 }
 
 
