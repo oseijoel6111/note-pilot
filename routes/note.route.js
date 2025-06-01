@@ -1,14 +1,10 @@
 import { Router } from "express";
+import {createNote, retrieveNote} from '../controllers/index.js'
 
 const noteRouter = Router()
 
-noteRouter.post('/', (req, res) => {
-    res.send('POST Notes created')
-})
-
-noteRouter.get('/', (req, res) => {
-    res.send('GET Notes created')
-})
+noteRouter.post('/', createNote)
+noteRouter.get('/', retrieveNote)
 
 
 export { noteRouter }

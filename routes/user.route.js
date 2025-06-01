@@ -1,15 +1,11 @@
 import { Router } from 'express'
+import {signup, login} from '../controllers/index.js'
 
 // user router
 const userRouter = Router()
 
-userRouter.post('/signup', (req, res) => {
-    res.send('User signup successfully')
-})
-
-userRouter.post('/login', (req, res) => {
-    res.send('User login successfully')
-})
+userRouter.post('/signup', signup)
+userRouter.post('/login', login)
 
 
 export { userRouter }
