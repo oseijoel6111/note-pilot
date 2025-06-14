@@ -1,7 +1,4 @@
-
-
-export const signup = (req, res)=>{
-
+export const signup = (req, res)=>{  
      res.send(req.body)
 }
 

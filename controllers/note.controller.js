@@ -1,6 +1,3 @@
-
-
-
 export const createNote = (req, res)=>{
     res.send('Note Created')
 }
