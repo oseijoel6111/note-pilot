@@ -6,6 +6,7 @@ import { logger } from './utils/logger.util.js'
 (async () => {
     try {
         await dbConnection.authenticate()
+        await dbConnection.sync()
         console.log('Database started')
         app.listen(ENV.PORT, () => {
             console.log(`🚀 Server started on http://localhost:${ENV.PORT}`)
